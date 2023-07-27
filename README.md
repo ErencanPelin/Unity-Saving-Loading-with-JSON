@@ -37,6 +37,11 @@ saveData.SaveAs(
 /*overrite existing save with same name?*/ false);
 ```
 
-## Notes
 The repo also contains a sample save profile inside [Saves](./Saves.cs)
+```csharp
+using SaveLoad;
+
+Saves.playerSaveData.position = transform.position;
+Saves.playerSaveData.SaveAs("playerData", "false");
+```
 
